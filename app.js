@@ -10,8 +10,6 @@ let server = app.listen(port, () => {
     console.log("Listening to port" + port);
 })
 
-const cors = require("cors");
-app.use(cors());
 let io = socket(server);//connection baan gya 
 
 io.on("connection", (socket) => {
